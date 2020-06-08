@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.a300272555.movieticketapp.MovieScheduler">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:paddingBottom="45dp"
+        android:text="@string/selectMovieAdmin"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:layout_weight="0.01">
+
+        <ListView
+            android:id="@+id/listPictures"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="?attr/listPreferredItemHeightLarge"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="259dp">
+
+        <TextView
+            android:id="@+id/txtStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="?attr/colorButtonNormal"
+            android:text="@string/txtstartTime"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="37dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="?attr/colorButtonNormal"
+            android:text="@string/txtRunTime"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/txtStart"
+            android:layout_alignBottom="@+id/txtStart"
+            android:layout_toRightOf="@+id/txtStart" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignLeft="@+id/btnClean"
+            android:layout_alignStart="@+id/btnClean"
+            android:layout_toLeftOf="@+id/textView10"
+            android:layout_toStartOf="@+id/textView10"
+            android:background="?attr/colorButtonNormal"
+            android:text="@string/txtCleaningTime"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtStart"
+            android:layout_alignLeft="@+id/txtStart"
+            android:layout_alignRight="@+id/txtStart"
+            android:layout_alignStart="@+id/txtStart"
+            android:layout_below="@+id/txtStart"
+            android:layout_marginTop="26dp"
+            android:text="Pick Time"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Time"
+            android:textSize="10sp"
+            android:layout_above="@+id/showRun"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6" />
+
+        <Button
+            android:id="@+id/btnClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnCloseTime"
+            android:layout_alignBottom="@+id/btnCloseTime"
+            android:layout_toLeftOf="@+id/btnCloseTime"
+            android:layout_toStartOf="@+id/btnCloseTime"
+            android:text="Pick Time"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorButtonNormal"
+            android:text="@string/txtCloseTime"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignRight="@+id/showClose"
+            android:layout_alignEnd="@+id/showClose"
+            android:layout_toRightOf="@+id/btnClean"
+            android:layout_toEndOf="@+id/btnClean"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnCloseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/showClose"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Pick Time"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/showStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnStart"
+            android:layout_alignStart="@+id/btnStart"
+            android:layout_below="@+id/btnStart"
+            android:layout_marginTop="21dp"
+            android:background="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/showRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/showStart"
+            android:layout_alignLeft="@+id/btnRun"
+            android:layout_alignStart="@+id/btnRun"
+            android:background="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/showClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/showRun"
+            android:layout_alignBottom="@+id/showRun"
+            android:layout_alignLeft="@+id/btnClean"
+            android:layout_alignStart="@+id/btnClean"
+            android:background="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/showClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/showClean"
+            android:layout_alignBottom="@+id/showClean"
+            android:layout_alignEnd="@+id/btnCloseTime"
+            android:layout_alignRight="@+id/btnCloseTime"
+            android:background="@android:color/background_light"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/btnDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView6"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnRun"
+            android:layout_toStartOf="@+id/btnRun"
+            android:text="@string/btnPickDate" />
+
+        <TextView
+            android:id="@+id/txtShowDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorButtonNormal"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:text="yyyy/mm/dd"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnDatePicker"
+            android:layout_toEndOf="@+id/btnDatePicker" />
+
+        <Button
+            android:id="@+id/btnSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/showStart"
+            android:layout_weight="0.07"
+            android:text="@string/btnSchedule" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+
+    tools:context="com.example.a300272555.movieticketapp.LoginActivity">
+
+    <TextView
+        android:id="@+id/txtHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/textLogin"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Enter your Name"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@android:color/white"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/txtHead"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/suc"
+        android:textColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/suc"
+            android:id="@+id/theTable"
+            android:background="@android:color/white">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light" />
+        </TableLayout>
+    </ScrollView>
+
+
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:textColorLink="@android:color/white"
+        android:hint="Enter EmailId"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/background_light"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/editName"
+        android:layout_alignLeft="@+id/editName"
+        android:layout_alignStart="@+id/editName" />
+
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnRegister"
+        android:layout_marginTop="24dp"
+        android:color="@drawable/btncolor"
+        android:text="@string/txtLogin"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editEmail"
+        android:layout_marginTop="96dp"
+        android:layout_toEndOf="@+id/scrollView2"
+        android:layout_toRightOf="@+id/scrollView2"
+        android:color="@drawable/btncolor"
+        android:text="@string/txtRegister"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+
+
+
+</RelativeLayout>

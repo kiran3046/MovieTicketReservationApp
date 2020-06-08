@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name"> Movie Tickets Reservation</string>
+    <string name="companyName">Book My Show</string>
+    <string name="title">Welcome !</string>
+    <string name="guestBtnText">Enter as Guest</string>
+    <string name="adminBtnText">Enter as Admin</string>
+    <string name="aboutUs">About Us</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="selectMovieAdmin">Movie Scheduler</string>
+    <string name="txtSelectDate">Select Date</string>
+    <string name="txtstartTime">Start-Time</string>
+    <string name="txtRunTime">Run-Time </string>
+    <string name="txtCleaningTime">Cleaning-Time</string>
+    <string name="txtCloseTime">Theatre-CloseTime</string>
+    <string name="btnSchedule">Schedule</string>
+    <string name="selectMovieGuest">Select a movie to Watch</string>
+    <string name="textViewDate">Select Date</string>
+    <string name="textViewDate1">dd/mm/yy</string>
+    <string name="spinnerDate">Schedule</string>
+    <string name="textViewTime">Select Time</string>
+    <string name="textViewTime1">00 : 00 : 00</string>
+    <string name="spinnerTime">Schedule</string>
+    <string name="textViewTickets">Select Tickets</string>
+    <string name="textLogin">Log In</string>
+    <string name="txtLogin">LOGIN</string>
+    <string name="txtRegister">REGISTER</string>
+    <string name="btnPickDate">Pick Date</string>
+    <string name="goBack">Back to HomePage</string>
+    <string name="txtMovieScheduled">Movie Scheduled</string>
+    <string name="aboutUscontent">
+        CSIS 3175 INTRO TO ANDROID \n
+        STUDENT ID : 300272555  \n
+        STUDENT NAME : KIRANDEEP KAUR  \n \n
+        Bookmyshow.com lets you book movie tickets in your favourite cinema in the simplest,
+        easiest and the smartest way without the unnecessary glitz.
+        Search,
+        Choose  Book movie tickets. It can\'t get simpler than this.
+        What\'s stopping you . Go ahead and search in Vancouver or Surrey area.
+        We also provide special discounts on local movies and theatre shows.</string>
+    <string name="contactUsContent"><![CDATA[
+    <b>Location :</b> Kiran Entertainment Private Limited Ground Floor, 1706 Suite
+    , Vancouver, BC, Canada, V3X189<br/> <br />
+    <b>Contact:</b> bmsenquiries@support.com<br/><br />
+    <b>Phone:</b>1800-BOOK-SHOW<br/><br />
+    <br /><br /><br /><br /><br />
+
+    <i>Copyright 2017 © Kiran Entertainment Pvt. Ltd. All Rights Reserved.</i>
+  ]]></string>
+    <string name="btnProceedToPay">Select Seats</string>
+
+    <string name="pickSeatTitle">Pick Your Seats</string>
+    <string name="btnConfirmSeats">Confirm Seats and pay</string>
+    <string name="receiptTitle">Your Receipt</string>
+    <string name="printTicket">Print Ticket</string>
+    <string name="ticketTitle">Your Ticket</string>
+    <string name="btnbookAnother">Book another Movie</string>
+
+
+
+
+
+
+
+</resources>

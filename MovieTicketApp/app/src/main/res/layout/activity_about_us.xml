@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context="com.example.a300272555.movieticketapp.AboutUs"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom"
+        android:paddingBottom="40dp"
+        android:text="@string/aboutUs"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/aboutUscontent"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.76"
+        android:background="?attr/actionModeSplitBackground"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+
+        android:text="@string/aboutUscontent"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/goBack" />
+</LinearLayout>

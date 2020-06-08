@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context="com.example.a300272555.movieticketapp.MovieScheduler2"
+    android:weightSum="1">
+
+
+
+
+    <TextView
+        android:id="@+id/textViewMovieScheduled"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_gravity="top"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:paddingBottom="45dp"
+        android:text="@string/txtMovieScheduled"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_weight="0.31" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.31">
+
+        <Button
+            android:id="@+id/btnScheduleAnother"
+            android:layout_width="wrap_content"
+            android:layout_height="114dp"
+            android:text="Schedule Another"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="114dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="SignOut" />
+    </LinearLayout>
+
+
+</LinearLayout>
